@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--Week 4-3 Assignment: UAT Space Program - We Have SOUND!
+Kyle Smith
+Smithkj665@hotmail.com-->
+<html>
+
+<head>
+    <script src="launchDataDisplay.js"></script>
+    <script src="dataLoader-1.js"></script>
+    <script src="code.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>
+        Kyle Smith's UATSpace Page
+    </title>
+    <script>
+        var theTime = new Date();
+        var time_interval = 5000;
+        var last_iteration = 0;
+        var running = true;
+        var index = 0;
+        var timer;
+        var data = getData();
+    </script>
+</head>
+
+<body>
+    <!--Table to hold UAT Space logo and header text-->
+    <table>
+        <tr>
+            <td><img src="UATspaceLogo-2.jpg"></td>
+            <td>
+                <h1>
+                    UAT Space Program
+                </h1>
+            </td>
+        </tr>
+    </table>
+
+    <!--Data Table-->
+    <!--Table id and border and width-->
+    <table id="data" border="2" width="70%">
+        <!--collum width match-->
+        <!--Collum 1-->
+        <col style="width: 35%">
+        <!--Collum 2-->
+        <col style="width: 35%">
+        <!--Table header-->
+        <thead>
+            <!--Header Text 1-->
+            <th>
+                Data type
+            </th>
+            <!--Header Text 2-->
+            <th>
+                Reading
+            </th>
+        </thead>
+        <!--Table body information-->
+        <tbody>
+            <!--Table body information text-->
+            <tr id="seconds">
+                <!--Text row 1, line 1-->
+                
+            </tr>
+            <tr id="latitude">
+            </tr>
+            <tr id="longitude">
+            </tr>
+            <tr id="gps_altitude">
+            </tr>
+            <tr id="bmp_altitude">
+            </tr>
+            <tr id="bmp_pressure">
+            </tr>
+            <tr id="bmp_temperature">
+            </tr>
+            <tr id="dig_temperature">
+            </tr>
+            <tr id="css_temperature">
+            </tr>
+            <tr id="css_eCO2">
+            </tr>
+            <tr id="css_TVOC">
+            </tr>
+            <tr id="UV">
+            </tr>
+            <tr id="AccelX">
+            </tr>
+            <tr id="AccelY">
+            </tr>
+            <tr id="AccelZ">
+            </tr>
+            <tr id="MagneticX">
+            </tr>
+            <tr id="MagneticY">
+            </tr>
+            <tr id="MagneticZ">
+            </tr>
+            <tr id="GyroX">
+            </tr>
+            <tr id="GyroY">
+            </tr>
+            <tr id="GyroZ">
+            </tr>
+        </tbody>
+
+    </table>
+
+    <br>
+    <!--button to run timer-->
+    <button onclick="startFun();" class="button" id="startButton">Start</button>
+    <!--Stop Button-->
+    <button onclick="stopFun();" class="button" id="stopButton">Stop</button><br>
+    <br>
+    <br>
+    The current time is: <div id="clockTime">Press start to display current time</div>
+<!--
+For our craps game on the html side, we need:
+    1. Button to play craps
+    2. Craps status line (won or lost)
+    3. Header saying craps played here
+
+The story of our craps game...
+After colonizing Mars humans made the first discovery of an alien spieces.
+After first contact humans attempted to connect through various games involving numbers,
+thinking that the aliens may better understand numbers rather then speech. To the explorers
+surprise the martian species particularly enjoyed craps for its simplistisity and randomness.
+Thus, UAT familiarizes every new cadet with the game of craps,so that in the event a UAT cadet
+should meet our new friends on mars they can enjoy a familar game as a friendly
+introduction ritual.
+-->
+<!--Craps game Header-->
+<h2>Please try your hand at Craps!</h2>
+<!--Craps station id and status text-->
+<div id="crapsStatus">Craps Status</div><br>
+<!--Craps station play button, class, text-->
+<button onclick="playCraps();" class="button" >Play Craps</button><br>
+<br>
+<br>
+<!--4-3 Assignment: UAT Space Program - We Have SOUND!-->
+<!--Station sound header and text-->
+<h3>Play space station sounds</h3>
+<h4>Warning, it may get loud</h4>
+<!--Station sound button and button text-->
+<button class="lgButton" onclick ="playStation();">Play space station sounds</button>
+<br>
+<br>
+<a href="./index.html"> Go to Home</a> | <a href="./boards.html"> Go to Boards Page</a> | <a href="./uatSpace.html"> Go to UATSpace Page </a>
+<br>
+<br>
+<footer>
+<center>
+    Kyle Smith
+    Univeristy of Advancing Technology<br>
+    2625 W. Baseline Rd.<br>
+    Tempe, AZ 85283<br>
+    <a href="mailto:smithkj665@hotmail.com">Email: Smithkj665@hotmail.com</a>
+</center>
+</footer>
+
+</body>
+
+</html>

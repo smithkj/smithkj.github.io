@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--Week 3-3 Assignment:  Mission Control Operator Login
+Kyle Smith
+Smithkj665@hotmail.com-->
+<html>
+    <!--header-->
+    <head>
+        <!--Page links to Java script page and Style sheet (.css) page-->
+        <script src="loginCode.js"></script>
+        <link rel="stylesheet" href="loginStyle.css">
+        <!--Webpage Title-->
+        <title>
+            UATSpace Login Page
+        </title>
+        <!--Webpage Header Text-->
+    </head>
+        <body>
+            <!--Main Title Text-->
+          <h1>Welcome to the UATSpace Login Page</h1>
+          <!--Please Log in Text-->
+          Please Log in below<br>
+          <br>
+          <!--Login status text-->
+          <div id="loginStatus">Login Status</div><br>
+          <br>
+          <!--Form (i.e login text: firstname, last name badge number and thier respective fill in spaces)-->
+          <form id="creditSubmit" onsubmit="return false">
+            <!-- first name text and text enter space-->
+            First Name: <input type="text" id="fName"> <br>
+            <!--Last Name text and text enter space--->
+            Last Name: <input type="text" id="lName"> <br>
+            <!--Badge Number text and number enter space--->
+            Badge Number: <input type="number" id="badgeID"> <br>
+            <br>
+            <!--Submit button with onclick checkCreds Function, Class id= "button"-->
+            <input type="submit" onclick="checkCreds();"class="button">
+
+        </form>
+        </body>
+</html>
